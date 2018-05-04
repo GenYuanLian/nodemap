@@ -1,0 +1,54 @@
+version: '2'
+services:
+  web:
+    image: littlemo/nodemap-server
+    container_name: bstk-nodemap-server
+    restart: unless-stopped
+    ports:
+      - "8888:80"
+    networks:
+      - frontend
+      - backend
+    volumes:
+      # 挂载运行时路径（其中包含日志、db.sqlite3、归集的静态文件）
+      - ./mnt/web/runtime:/app/runtime:rw
+      - ./mnt/web/runtime/log/nginx:/var/log/ngingenx:rw
+
+      # 挂载开发用应用源码，生产版本可直接打包到容器中
+      - ./mnt/web/server:/app/server:rw
+
+      # 挂载开发用脚本文件
+      - ./mnt/web/develop/scripts/start.sh:/app/run/start.sh:ro
+      - ./mnt/web/develop/scripts/config.sh:/app/run/config.sh:ro
+      - ./mnt/web/develop/config/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+
+      # 挂载配置文件
+      - ./mnt/web/config/bitcoin/bitcoin.conf:/app/server/server/bitcoin/bitcoin.conf:ro
+      - ./mnt/web/config/db/mysql.conf:/app/server/server/db/mysql.conf:ro
+    env_file:
+      - .env
+    command: ["gunicorn", "-w 1", "-b 127.0.0.1:8000", "server.wsgi"]
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    container_name: bstk-nodemap-redis
+    restart: unless-stopped
+    mem_limit: 1G
+    # ports:
+    #   - "6379:6379"
+    networks:
+      - backend
+    volumes:
+      - ./mnt/redis/data:/data              # 数据库数据文件路径
+      - ./mnt/redis/conf.d:/usr/local/etc/redis/redis.conf:ro # 配置文件
+    # command: [ "redis-server", "/usr/local/etc/redis/redis.conf" ]
+
+networks:
+  frontend:
+    external:
+      name: frontend
+  backend:
+    external:
+      name: backend

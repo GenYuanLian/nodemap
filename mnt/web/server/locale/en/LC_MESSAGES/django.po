@@ -1,0 +1,334 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-03 15:14+0800\n"
+"PO-Revision-Date: 2017-12-24 17:04+0800\n"
+"Last-Translator: Moore.Huang\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+
+#: node/admin.py:44
+#, python-brace-format
+msgid "共处理 {num} 条 Peer 数据"
+msgstr ""
+
+#: node/admin.py:52
+msgid "更新节点数成功！"
+msgstr ""
+
+#: node/admin.py:54
+msgid "获取IP地址信息"
+msgstr ""
+
+#: node/admin.py:55
+msgid "更新节点数"
+msgstr ""
+
+#: node/apps.py:7
+msgid "节点组件"
+msgstr "Node Modules"
+
+#: node/constants.py:5
+msgid "中国"
+msgstr "China"
+
+#: node/constants.py:7
+msgid "北京市"
+msgstr "Beijing"
+
+#: node/constants.py:8
+msgid "上海市"
+msgstr "Shanghai"
+
+#: node/constants.py:10
+msgid "广东省"
+msgstr "Guangdong"
+
+#: node/constants.py:11
+msgid "深圳市"
+msgstr "Shenzhen"
+
+#: node/constants.py:12
+msgid "广州市"
+msgstr "GuangZhou"
+
+#: node/constants.py:13
+msgid "东莞市"
+msgstr "DongGuan"
+
+#: node/constants.py:15
+msgid "山西省"
+msgstr "ShanXi"
+
+#: node/constants.py:16
+msgid "太原市"
+msgstr "TaiYuan"
+
+#: node/constants.py:18
+msgid "江苏省"
+msgstr "JiangSu"
+
+#: node/constants.py:19
+msgid "南京市"
+msgstr "NanJing"
+
+#: node/constants.py:21
+msgid "浙江省"
+msgstr "ZheJiang"
+
+#: node/constants.py:22
+msgid "杭州市"
+msgstr "HangZhou"
+
+#: node/constants.py:24
+msgid "江西省"
+msgstr "JiangXi"
+
+#: node/constants.py:25
+msgid "抚州市"
+msgstr "FuZhou"
+
+#: node/constants.py:27
+msgid "青海省"
+msgstr "QingHai"
+
+#: node/constants.py:28
+msgid "西宁市"
+msgstr "XiNing"
+
+#: node/constants.py:30
+msgid "福建省"
+msgstr "FuJian"
+
+#: node/constants.py:31
+msgid "福州市"
+msgstr "FuZhou"
+
+#: node/constants.py:32
+msgid "厦门市"
+msgstr "XiaMen"
+
+#: node/constants.py:34
+msgid "广西壮族自治区"
+msgstr "GuangXi"
+
+#: node/constants.py:35
+msgid "南宁市"
+msgstr "NanNing"
+
+#: node/constants.py:37
+msgid "内蒙古自治区"
+msgstr "NeiMengGu"
+
+#: node/constants.py:38
+msgid "锡林郭勒盟"
+msgstr "Xilingol"
+
+#: node/constants.py:40
+msgid "英国"
+msgstr "UK"
+
+#: node/models.py:11
+msgid "国"
+msgstr "Country"
+
+#: node/models.py:14
+msgid "省"
+msgstr "Province"
+
+#: node/models.py:19
+msgid "市"
+msgstr "City"
+
+#: node/models.py:24
+msgid "节点数"
+msgstr "Node Count"
+
+#: node/models.py:27
+msgid "经度"
+msgstr "Longitude"
+
+#: node/models.py:31 node/models.py:37
+msgid "若保存时为空将自动从网络查询并填写"
+msgstr ""
+"Empty when saved is automatically queried and filled out from the network"
+
+#: node/models.py:33
+msgid "纬度"
+msgstr "Latitude"
+
+#: node/models.py:40 node/models.py:120
+msgid "最后更新"
+msgstr "Last Updated"
+
+#: node/models.py:49 node/models.py:113
+msgid "节点数据"
+msgstr "Node Data"
+
+#: node/models.py:73
+msgid "远端地址"
+msgstr "addr"
+
+#: node/models.py:74
+#, fuzzy
+#| msgid "远端节点的IP地址和端口"
+msgid "远端节点的IP地址"
+msgstr ""
+"The IP address and port number used for the connection to the remote node"
+
+#: node/models.py:78
+msgid "最后发送时间"
+msgstr "lastsend"
+
+#: node/models.py:79
+msgid "最后一次成功发送数据到这个节点TCP socket的Unix epoch时间"
+msgstr ""
+"The Unix epoch time when we last successfully sent data to the TCP socket "
+"for this node"
+
+#: node/models.py:81
+msgid "最后接收时间"
+msgstr "lastrecv"
+
+#: node/models.py:82
+msgid "最后一次从这个节点接收数据的Unix epoch时间"
+msgstr "The Unix epoch time when we last received data from this node"
+
+#: node/models.py:84
+msgid "连接时间"
+msgstr "conntime"
+
+#: node/models.py:85
+msgid "连接到这个节点时的Unix epoch时间"
+msgstr "The Unix epoch time when we connected to this node"
+
+#: node/models.py:87
+msgid "时间偏移"
+msgstr "timeoffset"
+
+#: node/models.py:88
+msgid "以秒为单位的时间偏移"
+msgstr "The time offset in seconds"
+
+#: node/models.py:90
+msgid "Ping时间"
+msgstr "pingtime"
+
+#: node/models.py:91
+msgid "该节点最后一次响应我们的P2P ping消息的秒数"
+msgstr ""
+"The number of seconds this node took to respond to our last P2P ping message"
+
+#: node/models.py:93
+msgid "最短Ping时间"
+msgstr "minping"
+
+#: node/models.py:97
+msgid "观测到的最短Ping时间（如果有的话）"
+msgstr "The minimum observed ping time (if any at all)"
+
+#: node/models.py:99
+msgid "版本号"
+msgstr "version"
+
+#: node/models.py:100
+msgid "该节点使用的协议版本号"
+msgstr "The protocol version number used by this node"
+
+#: node/models.py:102
+msgid "子版本号"
+msgstr "subver"
+
+#: node/models.py:103
+msgid "该节点在它的version消息中发送的用户代理"
+msgstr "The user agent this node sends in its version message"
+
+#: node/models.py:106
+msgid "入站"
+msgstr "inbound"
+
+#: node/models.py:107
+msgid "如果该节点连接到我们，设为True；如果我们连接到这个节点，设为False"
+msgstr ""
+"Set to true if this node connected to us; set to false if we connected to "
+"this node"
+
+#: node/models.py:109
+msgid "起始高度"
+msgstr "startingheight"
+
+#: node/models.py:110
+msgid "当它连接到我们时，在其version消息中报告的远端节点的区块链高度"
+msgstr ""
+"The height of the remote node’s block chain when it connected to us as "
+"reported in its version message"
+
+#: node/models.py:128
+msgid "端点信息"
+msgstr "Peer Info"
+
+#: pages/apps.py:7
+msgid "页面"
+msgstr "Page"
+
+#: pages/templates/pages/_partials/base.html:17
+#: pages/templates/pages/_partials/base.html:40
+msgid "节点地图"
+msgstr "Node Map"
+
+#: pages/templates/pages/_partials/base.html:25
+msgid "导航开关"
+msgstr "Navigation Switch"
+
+#: pages/templates/pages/_partials/base.html:37
+msgid "首页"
+msgstr "Home"
+
+#: pages/templates/pages/_partials/base.html:40
+msgid "当前"
+msgstr "Current"
+
+#: pages/templates/pages/_partials/base.html:51
+msgid "BSTK，用区块链技术溯源一切信息，促进经济协作发展"
+msgstr ""
+
+#: pages/templates/pages/index.html:12
+msgid "节点"
+msgstr "Nodes"
+
+#: pages/views.py:20 pages/views.py:23 pages/views.py:33
+msgid "页面未找到"
+msgstr "Page Not Found"
+
+#: server/settings.py:152
+msgid "English"
+msgstr "English"
+
+#: server/settings.py:153
+msgid "Simplified Chinese"
+msgstr "Simplified Chinese"
+
+#~ msgid "RBTC，更好的数字货币世界"
+#~ msgstr "RBTC, A better digital currency world"
+
+#~ msgid "发送字节数"
+#~ msgstr "bytessent"
+
+#~ msgid "我们发送到这个节点的字节总数"
+#~ msgstr "The total number of bytes we’ve sent to this node"
+
+#~ msgid "接收字节数"
+#~ msgstr "bytesrecv"
+
+#~ msgid "我们从这个节点接收的字节总数"
+#~ msgstr "The total number of bytes we’ve received from this node"
